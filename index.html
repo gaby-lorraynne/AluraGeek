@@ -104,8 +104,19 @@
         </section>
     
         <section class="content__addProducts">
-            <p class="content__addProducts__title">ADICIONAR PRODUTO:</p>
-            <div class="content__addProducts__formulario"></div>
+            <p class="content__addProducts__title">ADICIONAR <br> PRODUTO:</p>
+                <form action="" class="content__addProducts__formulario">
+                    <fieldset>
+                        <input type="text" name="nome" placeholder="nome..." required>
+                        <input type="text" name="valor" placeholder="valor..." required>
+                        <input type="text" name="imagem" placeholder="imagem..." required>
+                    </fieldset>
+
+                    <div class="content__addProducts__formulario__btns">
+                        <button class="content__addProducts__formulario__btns__btn1">Guardar</button>
+                        <button class="content__addProducts__formulario__btns__btn2">Limpar</button>
+                    </div>
+                </form>
         </section>
     </main>
 </body>
