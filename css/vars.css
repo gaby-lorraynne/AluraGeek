@@ -1,0 +1,8 @@
+:root{
+    --color-principal: rgba(83, 0, 200, 1);
+    --color-cards: rgba(93, 4, 217, 1);
+    --color-branco: rgba(229, 229, 229, 1);
+    --color-black: #000;
+    --font-press: 'Press Start 2P';
+    --font-imb: 'IBM Plex Mono';
+}
