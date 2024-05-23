@@ -32,7 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 190px;
-    height: 220px;
+    height: 225px;
     margin: 25px 0 50px 25px;
     background: var(--color-cards);
     border: 3px solid var(--color-black);
@@ -62,10 +62,20 @@
 
 .content__myProducts__cards__products__preco{
     display: flex;
-    gap: 55px;
+    align-items: center;
+    gap: 45px;
     font-weight: 700;
     font-size: 18px;
 }
+
+.delete-button{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-branco);
+}
+
 
 
 /* Estilizando o scroll */

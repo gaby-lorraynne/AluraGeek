@@ -31,73 +31,15 @@
         <section class="content__myProducts">
             <p class="content__myProducts__title">MEUS PRODUTOS:</p>
             <div class="content__myProducts__cards">
-                <div class="content__myProducts__cards__products">
+                <div class="content__myProducts__cards__products" data-product>
                     <div class="content__myProducts__cards__products__content">
                         <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
                         <span>Stormtrooper</span>
                         <div class="content__myProducts__cards__products__preco">
                             <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/gameBoy.png" alt="Game Boy Classic">
-                        <span>Game Boy Classic</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
-                        <span>Stormtrooper</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/gameBoy.png" alt="Game Boy Classic">
-                        <span>Game Boy Classic</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
-                        <span>Stormtrooper</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/gameBoy.png" alt="Game Boy Classic">
-                        <span>Game Boy Classic</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__myProducts__cards__products">
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
-                        <span>Stormtrooper</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <i class="bi bi-trash-fill"></i>
+                            <button class="delete-button" data-id="${id}">
+                                <i class="bi bi-trash-fill"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -106,16 +48,16 @@
     
         <section class="content__addProducts">
             <p class="content__addProducts__title">ADICIONAR <br> PRODUTO:</p>
-                <form action="" class="content__addProducts__formulario">
+                <form class="content__addProducts__formulario" data-formulario>
                     <fieldset>
-                        <input type="text" name="nome" placeholder="nome..." required>
-                        <input type="text" name="valor" placeholder="valor..." required>
-                        <input type="text" name="imagem" placeholder="imagem..." required>
+                        <input type="text" name="nome" placeholder="nome..." data-nome required>
+                        <input type="text" name="valor" placeholder="valor..." data-valor required>
+                        <input type="text" name="imagem" placeholder="imagem..." data-imagem required>
                     </fieldset>
 
                     <div class="content__addProducts__formulario__btns">
-                        <button class="content__addProducts__formulario__btns__btn1">Guardar</button>
-                        <button class="content__addProducts__formulario__btns__btn2">Limpar</button>
+                        <button type="submit" id="button"  class="content__addProducts__formulario__btns__btn1">Guardar</button>
+                        <button type="reset"  id="button"  class="content__addProducts__formulario__btns__btn2">Limpar</button>
                     </div>
                 </form>
         </section>
