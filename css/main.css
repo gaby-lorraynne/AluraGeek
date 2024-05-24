@@ -63,9 +63,9 @@
 .content__myProducts__cards__products__preco{
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 50px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .delete-button{
@@ -74,6 +74,7 @@
     font-size: 20px;
     font-weight: 700;
     color: var(--color-branco);
+    cursor: pointer;
 }
 
 
@@ -129,6 +130,7 @@
     font-family: var(--font-imb);
     font-weight: 500;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .content__addProducts__formulario__btns__btn1{
@@ -141,6 +143,16 @@
     background: var(--color-branco);
     color: var(--color-formulario);
     border: 3px solid var(--color-formulario);
+}
+
+/* Mensagem */
+.mensagemLista{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-formulario);
 }
 
 /* Aplicando Layout Responsivo */
