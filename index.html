@@ -21,59 +21,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-            <img src="assets/imagens/image 1.png" alt="Logo">
-            <span class="header__logo__text">AluraGeek</span>
-        </div>
-    </header>
-    <main class="content">
-        <section class="content__myProducts">
-            <p class="content__myProducts__title">MEUS PRODUTOS:</p>
-            <div class="content__myProducts__cards" data-product>
-                <!-- <div class="content__myProducts__cards__products" >
-                    <div class="content__myProducts__cards__products__content">
-                        <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
-                        <span>Stormtrooper</span>
-                        <div class="content__myProducts__cards__products__preco">
-                            <span>$ 60,00 </span>
-                            <button class="delete-button" data-id="${id}">
-                                <i class="bi bi-trash-fill"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-    
-        <section class="content__addProducts">
-            <p class="content__addProducts__title">ADICIONAR <br> PRODUTO:</p>
-                <form class="content__addProducts__formulario" data-formulario>
-                    <fieldset>
-                        <input type="text" name="nome" placeholder="nome..." data-nome required>
-                        <input type="text" name="valor" placeholder="valor..." data-valor required>
-                        <input type="text" name="imagem" placeholder="imagem..." data-imagem required>
-                    </fieldset>
-
-                    <div class="content__addProducts__formulario__btns">
-                        <button type="submit" id="button"  class="content__addProducts__formulario__btns__btn1">Guardar</button>
-                        <button type="reset"  id="button"  class="content__addProducts__formulario__btns__btn2">Limpar</button>
-                    </div>
-                </form>
-        </section>
-    </main>
-    <footer>
-        <div class="footer__content">
-            <div class="footer__content__logo">
+    <div class="wrapper">
+        <header>
+            <div class="header__logo">
                 <img src="assets/imagens/image 1.png" alt="Logo">
-                <span class="footer__logo__text">AluraGeek</span>
+                <span class="header__logo__text">AluraGeek</span>
             </div>
-            <div class="footer__logo__descricao">
-                <span>Desenvolvido por <a href="https://www.linkedin.com/in/gabrielly-lorraynne-de-almeida/" target="_blank">Gabrielly Lorraynne</a></span>
-                <span> Alura Latam- 2024</span>
+        </header>
+        <main class="content">
+            <section class="content__myProducts">
+                <p class="content__myProducts__title">MEUS PRODUTOS:</p>
+                <div class="content__myProducts__cards" data-product>
+                    <!-- <div class="content__myProducts__cards__products" >
+                        <div class="content__myProducts__cards__products__content">
+                            <img src="assets/imagens/Stormtrooper.png" alt="Stormtrooper">
+                            <span>Stormtrooper</span>
+                            <div class="content__myProducts__cards__products__preco">
+                                <span>$ 60,00 </span>
+                                <button class="delete-button" data-id="${id}">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        
+            <section class="content__addProducts">
+                <p class="content__addProducts__title">ADICIONAR <br> PRODUTO:</p>
+                    <form class="content__addProducts__formulario" data-formulario>
+                        <fieldset>
+                            <input type="text" name="nome" placeholder="nome..." data-nome required>
+                            <input type="text" name="valor" placeholder="valor..." data-valor required>
+                            <input type="text" name="imagem" placeholder="imagem..." data-imagem required>
+                        </fieldset>
+    
+                        <div class="content__addProducts__formulario__btns">
+                            <button type="submit" id="button"  class="content__addProducts__formulario__btns__btn1">Guardar</button>
+                            <button type="reset"  id="button"  class="content__addProducts__formulario__btns__btn2">Limpar</button>
+                        </div>
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__content">
+                <div class="footer__content__logo">
+                    <img src="assets/imagens/image 1.png" alt="Logo">
+                    <span class="footer__logo__text">AluraGeek</span>
+                </div>
+                <div class="footer__logo__descricao">
+                    <span>Desenvolvido por <a href="https://www.linkedin.com/in/gabrielly-lorraynne-de-almeida/" target="_blank">Gabrielly Lorraynne</a></span>
+                    <span> Alura Latam- 2024</span>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="js/controllers/main.js" type="module"></script>
 </body>
