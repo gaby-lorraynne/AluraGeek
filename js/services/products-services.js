@@ -1,12 +1,12 @@
 async function productsList () {
-    const conexao = await fetch("https://alura-geek-tawny.vercel.app/products")
+    const conexao = await fetch("http://localhost:3000/products")
     const conexaoConvertida = await conexao.json();
     
     return conexaoConvertida;
 }
 
 async function inserirProduct (name, price, image) {
-    const conexao = await fetch ("https://alura-geek-tawny.vercel.app/products", {
+    const conexao = await fetch ("http://localhost:3000/products", {
         method: "POST",
         headers: {
             "Content-type": "application/json"
@@ -28,7 +28,7 @@ async function inserirProduct (name, price, image) {
 }
 
 async function deleteProduct (id){
-    const conexao = await fetch (`https://alura-geek-tawny.vercel.app/products/${id}`, {
+    const conexao = await fetch (`http://localhost:3000/products/${id}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json"
